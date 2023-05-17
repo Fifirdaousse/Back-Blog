@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+body{
+    margin: 0;
+}
+
+
+/* IMAGE */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.bg-image-head{
+    background-image: url(/asset/img/japan.jpg);
+    background-repeat: no-repeat;
+}
+.w-img{
+    width: 100%;
+}
+
+
+/* SIZING */
+.m-1200{
+    max-width: 1200px;
+}
+.m-400{
+    max-width: 400px;
+}
+.m-200{
+    width: 200px;
+}
+.m-900{
+    width: 900px;
+}
+.h-350{
+    height: 350px;
+}
+
+
+/* SPACING */
+.p-1 {
+    padding: 16px; /*1em = 1rem = 16px*/
+}
+.p-48{
+    padding: 48px;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mar-32{
+    margin: 32px;
+}
+.mar-16{
+    margin: 16px;
+}
+
+
+/* FLEX */
+.d-flex{
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.jc-center {
+    justify-content: center;
+}
+.jc-spbet{
+    justify-content: space-between;
+}
+.al-end{
+    box-align: right;
+}
+.f-1-300  {
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* remplace width */
+    flex-basis: 300px;
+}
+
+.border-ra{
+    border-radius: 20px;
+}
+
+
+/* TYPO */
+.text-deco{
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+
+
+/* COLOR */
+
+.bgc-gray{
+    background-color: #cccccc;
+}

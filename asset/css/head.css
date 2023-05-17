@@ -1,0 +1,25 @@
+nav{
+    background-color:#484a51;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.c-white{
+    color: white;
+}
+
+img{
+    width: 40px;
+}
+
+.mar-10{
+    margin: 7px;
+}
+.mar-r-10{
+    margin-right: 10px;
+}
+.mar-r-16{
+    margin-right: 16px;
+}
+
