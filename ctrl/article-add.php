@@ -26,22 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         die("La connexion a échoué : " . $conn->connect_error);
     }
 
-    // Insérer le nouvel article dans la base de données
-    // $idUtilisateur = $_SESSION['idUtilisateur'];
-    // $description = $_SESSION('description');
-
-    // $sql = "INSERT INTO article (idUtilisateur, titre, texte, description, illustration)
-    //         VALUES ('$idUtilisateur', '$titre', '$texte', '$description', '$illustration')";
-
-    // if ($conn->query($sql) === TRUE) {
-    //     $message = "Article créé avec succès.";
-    // } else {
-    //     $message = "Erreur lors de la création de l'article : " . $conn->error;
-    // }
-    // $conn->close();
-
-
-
     // Préparer la requête d'insertion avec des paramètres pour éviter les failles de sécurité
     $sql = "INSERT INTO article (idUtilisateur, titre, texte, description, illustration)
             VALUES (?, ?, ?, ?, ?)";
