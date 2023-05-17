@@ -17,6 +17,7 @@
         </table>
     </section>
 
+
 </main>
 
 <?php include '../view/partial/footer.php'?>
