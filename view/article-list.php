@@ -14,8 +14,8 @@ var_dump($_POST);
                     <td><?= $article['description'] ?></td>
                     <td><?= $article['texte'] ?></td>
                     <td><?= $article['idUtilisateur'] ?></td>
-                    <td><a href="../ctrl/article-edit.php?id=<?= $article.id ?>">Edit article</a></td>
-                    <td><a href="../ctrl/article-delete.php?id=<?= $article.id ?>">Supprimer article</a></td>
+                    <td><a href="../ctrl/article-update.php">Edit article</a></td>
+                    <td><a href="../ctrl/article-delete.php">Supprimer article</a></td>
                 </tr>
             <?php endforeach; ?>
         </table>
