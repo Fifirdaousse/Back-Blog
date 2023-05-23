@@ -2,8 +2,9 @@
 
 require('../lib/article.php');
 
-$pageTitle = 'article';
 $listArticle = readAll();
+
+// $updateArticle = update();
 
 
 include '../view/article-list.php';

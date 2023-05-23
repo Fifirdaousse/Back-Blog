@@ -14,7 +14,7 @@
         <a href="/index.php"><img src="/asset/img/phi.png" alt="Logo"></a>
         <div class="mar-10">
         <a href="/index.php" class="text-deco c-white mar-r-16">Accueil</a>
-        <a href="./login.php" class="text-deco c-white mar-r-10">Login</a>
+        <a href="../ctrl/login.php" class="text-deco c-white mar-r-10">Login</a>
         </div>
     </nav>
 
