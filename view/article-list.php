@@ -11,13 +11,13 @@ session_start();
             <?php foreach($listArticle as $article) : ?>
                 <tr>
                     <td>
-                        <img src="../asset/upload/<?= $article['illustration'] ?>" alt="illustration"
+                        <img src="../asset/upload/<?= $article['illustration'] ?>" alt="illustration">
                     </td>
                     <td><?= $article['titre'] ?></td>
                     <td><?= $article['description'] ?></td>
                     <td><?= $article['texte'] ?></td>
                     <td><?= $article['idUtilisateur'] ?></td>
-                    <td><a href="../ctrl/article-update.php?id=<?= $article['id'] ?>">Edit article</a></td>
+                    <td><a href="../ctrl/article-edit.php?id=<?= $article['id'] ?>">Edit article</a></td>
                     <td><a href="../ctrl/article-delete.php?id=<?= $article['id'] ?>">Supprimer article</a></td>
                 </tr>
             <?php endforeach; ?>

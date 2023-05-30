@@ -24,7 +24,7 @@
         <label for="fileUpload">Fichier :</label>
         <input type="file" name="illustration" id="fileUpload" value ="<?= $article['illustration']?>">
 
-        <button type="submit">Créer l'article</button>
+        <button type="submit">Modifier l'article</button>
     </form>
 </main>
 
