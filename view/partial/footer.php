@@ -1,6 +1,4 @@
 
-    <link rel="stylesheet" href="/asset/css/foot.css">
-
 
     <footer>
         <div class="container p-1 d-flex wrap site-footer jc-spbet">
@@ -20,7 +18,7 @@
             <div class="d-grid p-r-25">
                 <h3>Links</h3>
                 <a href="/index.php" class="text-deco c-light-gray">Accueil</a>
-                <a href="/login.php" class="text-deco c-light-gray">Login</a>
+                <a href="../../lib/login.php" class="text-deco c-light-gray">Login</a>
             </div>
         </div>
     </footer>

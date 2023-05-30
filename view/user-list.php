@@ -9,10 +9,12 @@
                 <td><?= $user['nom'] ?></td>
                 <td><?= $user['prenom'] ?></td>
                 <td><?= $user['email'] ?></td>
+                <td><?= $user['role'] ?></td>
+                <td><?= $user['ART_titre'] ?></td>
             </tr>
         <?php endforeach;?>
     </table>
 </main>
 
 
-<?php include '../view/partial/footer.php'?>
+<?php include '../view/partial/footer.php' ?>

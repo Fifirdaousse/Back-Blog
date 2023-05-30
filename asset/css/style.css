@@ -1,107 +1,203 @@
-*{
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+/******************/
+/*  Sommaire     */
+/*  1. General   */
+/*  2. Head      */
+/*  3. Login     */
+/*  4. Foot      */
+/*****************/
+
+/* 1. General */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-
 
 /* IMAGE */
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
-.bg-image-head{
-    background-image: url(/asset/img/japan.jpg);
-    background-repeat: no-repeat;
+.bg-image-head {
+  background-image: url(/asset/img/japan.jpg);
+  background-repeat: no-repeat;
 }
-.w-img{
-    width: 100%;
+.w-img {
+  width: 100%;
 }
-
 
 /* SIZING */
-.m-1200{
-    max-width: 1200px;
+.m-1200 {
+  max-width: 1200px;
 }
-.m-400{
-    max-width: 400px;
+.m-400 {
+  max-width: 400px;
 }
-.m-200{
-    width: 200px;
+.m-200 {
+  width: 200px;
 }
-.m-900{
-    width: 900px;
+.m-900 {
+  width: 900px;
 }
-.h-350{
-    height: 350px;
+.h-350 {
+  height: 350px;
 }
-
 
 /* SPACING */
 .p-1 {
-    padding: 16px; /*1em = 1rem = 16px*/
+  padding: 16px; /*1em = 1rem = 16px*/
 }
-.p-48{
-    padding: 48px;
+.p-48 {
+  padding: 48px;
 }
 
 .m-auto {
-    margin: auto;
+  margin: auto;
 }
 
-.mar-32{
-    margin: 32px;
+.mar-32 {
+  margin: 32px;
 }
-.mar-16{
-    margin: 16px;
+.mar-16 {
+  margin: 16px;
 }
-
 
 /* FLEX */
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
 .wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .jc-center {
-    justify-content: center;
+  justify-content: center;
 }
-.jc-spbet{
-    justify-content: space-between;
+.jc-spbet {
+  justify-content: space-between;
 }
-.al-end{
-    box-align: right;
+.al-end {
+  box-align: right;
 }
-.f-1-300  {
-    flex-grow: 1;
-    flex-shrink: 1;
-    /* remplace width */
-    flex-basis: 300px;
-}
-
-.border-ra{
-    border-radius: 20px;
+.f-1-300 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* remplace width */
+  flex-basis: 300px;
 }
 
+.border-ra {
+  border-radius: 20px;
+}
 
 /* TYPO */
-.text-deco{
-    text-decoration: none;
+.text-deco {
+  text-decoration: none;
 }
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
-
 
 /* COLOR */
 
-.bgc-gray{
-    background-color: #cccccc;
+.bgc-gray {
+  background-color: #cccccc;
+}
+
+/* 2. Head  */
+
+nav {
+  background-color: #484a51;
+  height: 70px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.c-white {
+  color: white;
+}
+
+img {
+  width: 40px;
+}
+
+.mar-10 {
+  margin: 7px;
+}
+.mar-r-10 {
+  margin-right: 10px;
+}
+.mar-r-16 {
+  margin-right: 16px;
+}
+
+/*  3. Login     */
+
+form {
+  background-color: #d6d6d9ab;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.mar-b-32 {
+  margin-bottom: 32px;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  width: 300px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  background-color: #36373b;
+  width: 300px;
+}
+
+/*  4. Foot      */
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.site-footer {
+  background-color: #26272b;
+  padding: 20px;
+  margin-top: 32px;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.site-footer h3 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.c-light-gray {
+  color: #737373;
+}
+
+.w-600 {
+  max-width: 600px;
+}
+
+.p-r-25 {
+  padding-right: 25px;
 }

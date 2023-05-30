@@ -1,4 +1,4 @@
-<?php require '../view/partial/header.php'?>
+<?php require '../view/partial/header.php' ?>
 
 <main class="d-flex jc-center wrap m-1200 m-auto">
 
@@ -27,4 +27,4 @@
 
 </main>
 
-<?php require '../view/partial/footer.php'?>
+<?php require '../view/partial/footer.php' ?>

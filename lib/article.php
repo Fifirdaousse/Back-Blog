@@ -45,8 +45,7 @@ function read($id)
    $successOrFailure = $stmt->execute();
    logMsg("Success (1) or Failure (0) ? $successOrFailure" . PHP_EOL);
 
-   $result = $stmt->fetch(PDO::FETCH_ASSOC);
-   return $result;
+    return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
 function readAll()
@@ -61,17 +60,42 @@ function readAll()
     $successOrFailure = $stmt->execute();
     logMsg("Success (1) or Failure (0) ? $successOrFailure" . PHP_EOL);
 
-    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $result;
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 
 function update($id, $titre, $description, $texte, $illustration)
 {
-    // ...
+    // Prépare la requête
+    $query = 'UPDATE article SET titre = :titre, description = :description, texte = :texte, illustration = :illustration';
+    $query .= ' WHERE id = :id';
+    $stmt = getPDO()->prepare($query);
+    $stmt->bindParam(':id', $id);
+    $stmt->bindParam(':titre', $titre);
+    $stmt->bindParam(':description', $description);
+    $stmt->bindParam(':texte', $texte);
+    $stmt->bindParam(':illustration', $illustration);
+    logMsg($stmt->debugDumpParams());
+
+    // Exécute la requête
+    $successOrFailure = $stmt->execute();
+
+    logMsg("Success (1) or Failure (0) ? $successOrFailure" . PHP_EOL);
+
+    return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
 function delete($id)
 {
-    // ...
+    // Prépare la requête
+    $query = 'DELETE FROM article WHERE id = :id';
+    $stmt = getPDO()->prepare($query);
+    $stmt->bindParam(':id', $id);
+    logMsg($stmt->debugDumpParams());
+
+    // Exécute la requête
+    $successOrFailure = $stmt->execute();
+    logMsg("Success (1) or Failure (0) ? $successOrFailure" . PHP_EOL);
+
+    return $stmt->fetch(PDO::FETCH_ASSOC);
 }

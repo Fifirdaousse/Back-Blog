@@ -1,4 +1,4 @@
-<?php include '../view/partial/header.php'?>
+<?php include '../view/partial/header.php' ?>
 
 
 <h1>Créer un article</h1>
@@ -25,4 +25,4 @@
 </form>
 
 
-<?php include '../view/partial/footer.php'?>
+<?php include '../view/partial/footer.php' ?>

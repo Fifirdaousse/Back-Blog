@@ -1,5 +1,5 @@
 <?php include '../view/partial/header.php';
-var_dump($_POST);
+session_start();
 ?>
 
 <main>
@@ -10,16 +10,19 @@ var_dump($_POST);
         <table>
             <?php foreach($listArticle as $article) : ?>
                 <tr>
+                    <td>
+                        <img src="../asset/upload/<?= $article['illustration'] ?>" alt="illustration"
+                    </td>
                     <td><?= $article['titre'] ?></td>
                     <td><?= $article['description'] ?></td>
                     <td><?= $article['texte'] ?></td>
                     <td><?= $article['idUtilisateur'] ?></td>
-                    <td><a href="../ctrl/article-update.php">Edit article</a></td>
-                    <td><a href="../ctrl/article-delete.php">Supprimer article</a></td>
+                    <td><a href="../ctrl/article-update.php?id=<?= $article['id'] ?>">Edit article</a></td>
+                    <td><a href="../ctrl/article-delete.php?id=<?= $article['id'] ?>">Supprimer article</a></td>
                 </tr>
             <?php endforeach; ?>
         </table>
 
 </main>
 
-<?php include '../view/partial/footer.php'?>
+<?php include '../view/partial/footer.php' ?>
