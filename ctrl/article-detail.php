@@ -2,13 +2,11 @@
 
 session_start();
 require '../lib/article.php';
-require '../lib/coms.php';
-
 
 if($_SERVER['REQUEST_METHOD'] === 'GET') {
     $id = $_GET['id'];
     $article = read($id);
-    var_dump($article);
+    // var_dump($article);
 }
 
 // Vérifier si le formulaire de création d'article est soumis
@@ -24,5 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $article = read($id);
 
 }
+
+require("../lib/coms.php");
+
+$listCom = readCom($id);
+
+var_dump($listCom);
 
 include '../view/article-detail.php';
