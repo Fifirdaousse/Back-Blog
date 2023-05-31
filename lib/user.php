@@ -21,7 +21,7 @@ function readAllUser()
 
 
 
-function createUser($nom, $prenom, $email, $mdp)
+function signup($nom, $prenom, $email, $mdp)
 {
     // ID du rôle Membre
     $idRole = 20; 

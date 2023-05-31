@@ -20,7 +20,6 @@ body {
 /* IMAGE */
 img {
   max-width: 100%;
-  height: auto;
 }
 .bg-image-head {
   background-image: url(/asset/img/japan.jpg);
@@ -170,7 +169,7 @@ button {
 footer {
   position: relative;
   bottom: 0;
-  width: 100%;
+  max-width: 100%;
 }
 .site-footer {
   background-color: #26272b;

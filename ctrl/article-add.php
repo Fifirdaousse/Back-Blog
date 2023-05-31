@@ -17,13 +17,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $texte = $_POST['texte'];
     $description = $_POST['description'];
     $illustration = $_FILES['illustration'];
-    $path_article = '/article/' . $illustration['name'];
+    $path_article = "upload/" . $illustration['name'];
 
     create($idUtilisateur, $titre, $description, $texte, $path_article);
 
     // Déplacer l'image dans le dossier /article
-    move_uploaded_file($illustration['tmp_name'], '..asset/upload/article/' . $illustration['name']);
-
+    move_uploaded_file($illustration['tmp_name'], '../asset/upload/' . $illustration['name']);
 }
 
 

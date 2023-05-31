@@ -1,10 +1,9 @@
 <?php
-
+session_start();
 require('../lib/article.php');
 
 $listArticle = readAll();
 
-// $updateArticle = update();
 
 
 include '../view/article-list.php';

@@ -3,14 +3,13 @@
 <main>
     <h1>Modifier l'article</h1>
 
-    <?php if (isset($message)) { ?>
-    <p><?php echo $message; ?></p>
-    <?php } ?>
 
     <form method="POST" action="article-edit.php" enctype="multipart/form-data">
+        <!-- recuperer l'id -->
         <div>
             <input type="hidden" name="id" value="<?= $article['id']?>">
         </div>
+
         <label for="titre">Titre :</label>
         <input type="text" id="titre" name="titre" value ="<?= $article['titre']?>">
         <br/>

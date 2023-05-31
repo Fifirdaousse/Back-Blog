@@ -9,13 +9,13 @@
 
 <form method="POST" action="article-add.php" enctype="multipart/form-data">
     <label for="titre">Titre :</label><br>
-    <input type="text" id="titre" name="titre" required><br><br>
+    <input type="text" id="titre" name="titre" ><br><br>
 
     <label for="desc">Description :</label><br>
-    <textarea id="desc" name="description" required></textarea>
+    <textarea id="desc" name="description" ></textarea>
 
     <label for="texte">Texte :</label><br>
-    <textarea id="texte" name="texte" rows="8" cols="80" required></textarea><br><br>
+    <textarea id="texte" name="texte" rows="8" cols="80" ></textarea><br><br>
 
     <h2>Illustration :</h2>
         <label for="fileUpload">Fichier :</label>

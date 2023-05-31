@@ -10,12 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $prenom = $_POST['prenom'];
     $email = $_POST['email'];
     $mdp = $_POST['motDePasse'];
-
-
-createUser($nom, $prenom, $email, $mdp);
-
-echo "Inscription réussie";
-header("Location: ../index.php");
+    
+    signup($nom, $prenom, $email, $mdp);
+    
+    echo "Inscription réussie";
+    header("Location: ../index.php");
 }
 
 include "../view/sign-up.php";
